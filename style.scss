@@ -1,0 +1,18 @@
+$background-color: #49a09d;
+$header-color: #55608f;
+$border-color: #ffffff;
+
+.wrapper{
+    background-color: $background-color;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+
+    .site-content{
+        min-width: 200vb;
+        margin-block-start: 5%;
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}

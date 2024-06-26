@@ -1,0 +1,12 @@
+.wrapper {
+  background-color: #49a09d;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+.wrapper .site-content {
+  min-width: 200vb;
+  margin-block-start: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}/*# sourceMappingURL=style.css.map */
