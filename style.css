@@ -1,12 +1,50 @@
-.wrapper {
+body {
+  margin: 0;
+  padding: 0;
   background-color: #49a09d;
-  min-height: 100vh;
-  display: flex;
-  justify-content: space-evenly;
+  color: #ffffff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  position: relative;
 }
-.wrapper .site-content {
-  min-width: 200vb;
-  margin-block-start: 5%;
+
+.wrapper {
+  position: absolute;
+  top: 100px;
+  left: 30%;
+  border: 1px solid #ffffff;
+  min-width: 35%;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper .site-nav {
+  background-color: #55608f;
+}
+.wrapper .site-nav ul {
+  list-style-type: none;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr 2fr;
+  font-weight: 400;
+}
+.wrapper #site-main-content {
+  display: flex;
+  flex-direction: column;
+  grid-row-gap: 28px;
+}
+.wrapper #site-main-content .user:hover {
+  background-color: #55608f;
+}
+.wrapper #site-main-content .user {
+  box-sizing: content-box;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  align-items: center;
+  padding: 1.5%;
+}
+.wrapper #site-main-content .user .userAvatar {
+  display: flex;
+  justify-content: center;
+}
+.wrapper #site-main-content .user img {
+  height: 40px;
+  border-radius: 5px;
 }/*# sourceMappingURL=style.css.map */

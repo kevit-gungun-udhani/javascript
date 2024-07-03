@@ -1,18 +1,63 @@
 $background-color: #49a09d;
 $header-color: #55608f;
 $border-color: #ffffff;
+$text-color: #ffffff;
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: $background-color;
+    color: $text-color;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+}
 
 .wrapper{
-    background-color: $background-color;
-    min-height: 100vh;
-    display: flex;
-    justify-content: space-evenly;
+   position: absolute;
+   top: 100px;
+   left: 30%;
+   border: 1px solid $border-color;
+   min-width: 35%;
+   display: flex;
+   flex-direction: column;
 
-    .site-content{
-        min-width: 200vb;
-        margin-block-start: 5%;
-        
+   .site-nav{
+    background-color: $header-color;
+
+    ul{
+        list-style-type: none;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 2fr 2fr;
+        font-weight: 400;
     }
+   }
+
+   #site-main-content{
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 28px;
+
+    .user:hover{
+        background-color: $header-color;
+    }
+
+    .user{
+        box-sizing: content-box;
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr;
+        align-items: center;
+       
+        padding: 1.5%;
+        
+        .userAvatar{
+            display: flex;
+            justify-content: center;
+        }
+        img{
+            height: 40px; 
+            border-radius: 5px;
+        }
+    }
+
+   }
 }
