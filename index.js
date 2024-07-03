@@ -10,7 +10,6 @@ fetch(apiUrl)
     }
 ).then(
     (userData) => {
-        console.log(userData.data);
         const siteMainContent = document.getElementById("site-main-content");
         
         userData.data.map(({first_name, last_name, avatar}) => {
